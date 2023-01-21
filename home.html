@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<hmtl>
+	<head>
+		<title>NJOTRAVEL - Tour & Travelling Agent</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="/var/www/html/ujian-penjurusan/assets/home/icon.png">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<navbar id="navbar">
+			<div class="navbar">
+				<a href="home.html">
+					<img src="/var/www/html/ujian-penjurusan/assets/home/logo.png" width="213px" draggable="false">
+				</a>
+				<div class="nav">
+					<div class="dropdown">
+						<a href="home.html" id="nav-icon">Home</a>
+						<hr>
+					</div>
+					<div class="dropdown">
+						<a href="about.html" id="nav-icon">About Us</a>
+						<div class="dropdown-content">
+							<a href="about.html#desc-about">Our Offers</a>
+							<a href="about.html#vid-documentary-about">Documentary</a>
+							<a href="about.html#qna-about">QnA</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<a href="blog.html" id="nav-icon">Blog</a>
+						<div class="dropdown-content">
+							<a href="blog.html#blog">Our Adventure</a>
+							<a href="blog.html#explore-blog">Explore ur Destination</a>
+						</div>
+					</div>
+					<div class="dropdown">
+						<a href="contact.html" id="nav-icon">Contact Us</a>
+					</div>
+				</div>
+				<div>
+					<div id="login">
+						<a href="#popup" class="sign">Login
+						</a>
+					</div>
+					<div id="popup">
+						<div class="window">
+							<a href="#" class="close-btn" title="close">&times;</a>
+							<div>
+								<h1>LOGIN</h1>
+								
+								<p>Username</p>
+								<input type="text" placeholder="Username">
+								<br>
+								
+								<p>Email</p>
+								<input type="text" placeholder="Email Address">
+								<br>
+								
+								<p>Password</p>
+								<input type="password" placeholder="Password">
+								<br>
+								<br>
+								
+								<a href="#" style="margin: 0;"><button class="reg">Login</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</navbar>
+		
+		<div class="scroll-top" id="topLink">
+			<a href="#top" class="top-link" title="Scroll to Top">&#10097;</a>
+		</div>
+		
+		<section class="sec-1" id="home" data-aos="zoom-out" data-aos-once="true">
+			<div class="home-sec-1">
+				<img src="/var/www/html/ujian-penjurusan/assets/home/homepage.png" width="600px" class="img-homepage" draggable="false">
+				<div class="title-home">
+					<h1>Plesir Dulu</h1>
+					<p>
+						Plesir dulu menyediakan layanan paket tour dan travel yang pastinya wajib kamu coba nikmati.
+					</p>
+					<div class="input-search">
+  						<input type="text" placeholder="Mau liburan kemana kamu?">
+						<div>
+							<img src="/var/www/html/ujian-penjurusan/assets/svg/search.svg" width="17px" draggable="false">
+						</div>
+					</div>
+					<div class="slide-home">
+						<div onclick="bgSlider('/var/www/html/ujian-penjurusan/assets/home/bg-home-2.jpg')">
+							<img src="/var/www/html/ujian-penjurusan/assets/home/card-home-1.jpg" alt="Danau Lele.jpg" draggable="false">
+							<h4>Danau Lele</h4>
+						</div>
+						<div class="dif-slide" onclick="bgSlider('/var/www/html/ujian-penjurusan/assets/home/bg-home-1.jpg')">
+							<img src="/var/www/html/ujian-penjurusan/assets/home/card-home-2.jpg" alt="Sungai Aci.jpg" draggable="false" class="slidehome">
+							<h4>Sungai Aci</h4>
+						</div>
+						<div onclick="bgSlider('/var/www/html/ujian-penjurusan/assets/home/bg-home-3.jpg')">
+							<img src="/var/www/html/ujian-penjurusan/assets/home/card-home-3.jpg" alt="Bukit Oreo.jpg" draggable="false">
+							<h4>Bukit Oreo</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<script>
+			function bgSlider(anything) {
+				var bgslide = document.querySelector('.sec-1');
+				
+				bgslide.style.background = "url('" + anything + "')";
+				bgslide.style.backgroundSize = "cover";
+			}
+			
+		</script>
+		
+		<section class="sec-2">
+			<div data-aos="fade-right">
+				<h3>Tempat Tujuan Favorit</h3>
+				<h1>Aligarh</h1>
+				<hr>
+				<p>
+					Aligarh adalah sebuah kota di negara bagian Uttar Pradesh di India. Ini adalah markas administratif distrik Aligarh, dan terletak 342 kilometer barat laut ibu kota negara bagian Lucknow
+				</p>
+			</div>
+			<img src="/var/www/html/ujian-penjurusan/assets/home/topic-1.jpg" width="430px" data-aos="fade-left">
+		</section>
+		
+		<section class="sec-3" id="popular-home">
+			<div>
+				<h1 data-aos="fade-up">Enjoy your holiday together</h1>
+				<p data-aos="fade-up">
+					NjoTravel menawarkan berbagai ekspedisi tur dan travel serta dengan pelayanan dan<br>kualitas agen yang nyaman untuk nongki kamu bersama orang-orang terdekatmu.
+				</p>
+				<a href="#country-home"><button data-aos="fade-up">See more</button></a>
+			</div>
+		</section>
+			
+		<section class="sec-4" id="country-home">
+			<div class="black-opacity"></div>
+			<h2>The Most Popular Tours in Countries</h2>
+			<div class="slider-2-home" name="slider" id="slider_card">
+				<input type="radio" name="cardslider" id="t-1">
+				<input type="radio" name="cardslider" id="t-2" checked>
+				<input type="radio" name="cardslider" id="t-3">
+				<input type="radio" name="cardslider" id="t-4">
+				<input type="radio" name="cardslider" id="t-5">
+				<input type="radio" name="cardslider" id="t-6">
+				<input type="radio" name="cardslider" id="t-7">
+				<div class="page-card-slide" data-aos="fade-up">
+					<label class="card-1" for="t-1">
+						<div class="over-it">
+							<img src="/var/www/html/ujian-penjurusan/assets/home/india.jpg" width="100%" alt="india.jpg">
+						</div>
+						<div>
+							<h3>India</h3>
+							<p>
+								New Delhi adalah ibu kota India dan bagian dari Wilayah Ibu Kota Nasional Delhi.
+							</p>
+							<button onclick="cardOne()">Lihat..</button>
+						</div>
+					</label>
+					
+					<label class="card-1" for="t-2">
+						<div class="over-it">
+							<img src="/var/www/html/ujian-penjurusan/assets/home/norwegia.jpg" width="100%" alt="norwegia.jpg">
+						</div>
+						<div>
+							<h3>Norwegia</h3>
+							<p>
+								Norwegia, sebuah negara Nordik di Semenanjung Skandinavia, di bagian ujung barat.
+							</p>
+							<button>Lihat..</button>
+						</div>
+					</label>
+					
+					<label class="card-1" for="t-3">
+						<div class="over-it">
+							<img src="/var/www/html/ujian-penjurusan/assets/home/portugal.jpg" width="100%" alt="portugal.jpg">
+						</div>
+						<div>
+							<h3>Portugal</h3>
+							<p>
+								Portugal adalah sebuah negara pesisir pantai di wilayah Eropa Barat Daya.
+							</p>
+							<button>Lihat..</button>
+						</div>
+					</label>
+					
+					<label class="card-1" for="t-4">
+						<div class="over-it">
+							<img src="/var/www/html/ujian-penjurusan/assets/home/ka'bah.jpg" height="100%" alt="ka'bah.jpg">
+						</div>
+						<div>
+							<h3>Saudi Arabia</h3>
+							<p>
+								Arab Saudi identik dengan perjalanan untuk menunaikan ibadah umrah maupun haji.
+							</p>
+							<button>Lihat..</button>
+						</div>
+					</label>
+					
+					<label class="card-1" for="t-5">
+						<div class="over-it">
+							<img src="/var/www/html/ujian-penjurusan/assets/home/ntah1.jpg" height="100%" alt="swedia.jpg">
+						</div>
+						<div>
+							<h3>Swedia</h3>
+							<p>
+								Swedia adalah sebuah negara Nordik di Skandinavia, Eropa Utara.
+							</p>
+							<br>
+							<button>Lihat..</button>
+						</div>
+					</label>
+					
+					<label class="card-1" for="t-6">
+						<div class="over-it">
+							<img src="/var/www/html/ujian-penjurusan/assets/home/kota2.jpg" height="100%" alt="finlandia.jpg">
+						</div>
+						<div>
+							<h3>Finlandia</h3>
+							<p>
+								Finlandia merupakan negara yang berbatasan dengan Swedia, Eropa Utara.
+							</p>
+							<button>Lihat..</button>
+						</div>
+					</label>
+					
+					<label class="card-1" for="t-7">
+						<div class="over-it">
+							<img src="/var/www/html/ujian-penjurusan/assets/home/kota.jpg" height="100%" alt="USA.jpg">
+						</div>
+						<div>
+							<h3>U.S.A</h3>
+							<p>
+								Negara adidaya berada di Benua Amerika yg dibagi menjadi tiga, dan salah satunya Amerika Selatan.
+							</p>
+							<button>Lihat..</button>
+						</div>
+					</label>
+				</div>
+				<a class="t-prev" id="prev" onclick="Navi('prev');" data-aos="fade-right">
+					<img src="/var/www/html/ujian-penjurusan/assets/svg/arrow-left.svg" width="16px" draggable="false">
+				</a>
+				<a class="t-next" id="next" onclick="Navi('next');" data-aos="fade-left">
+					<img src="/var/www/html/ujian-penjurusan/assets/svg/arrow-right.svg" width="16px" draggable="false">
+				</a>
+			</div>
+			<div class="popup-card">
+				<span title="Close Description">&times;</span>
+				<div class="over-it">
+					<img id="img-popup-card" src="/var/www/html/ujian-penjurusan/assets/home/popup-card-india.jpg">
+				</div>
+				<h3 id="title-card">INDIA</h3>
+				<p id="para-card">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium massa orci, sed lobortis turpis volutpat sit amet. Cras nunc sapien, ullamcorper ac consectetur id, hendrerit sagittis sapien. Aenean porta libero eu semper tempus. Nullam porttitor consectetur ipsum, non scelerisque quam posuere vel.
+				</p><br>
+				<p id="para">
+					Mauris tristique sapien et maximus euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut vitae venenatis ante, ut vehicula augue. Integer risus dolor, laoreet rhoncus urna ut, ultricies pretium lectus. Phasellus auctor metus nec iaculis porttitor. Maecenas malesuada placerat erat a eleifend. Cras auctor lorem arcu. Ut placerat luctus rhoncus.<br>
+				</p><br>
+				<p id="para">
+					Donec tincidunt felis non aliquet consectetur. Pellentesque vestibulum ipsum non nisl suscipit, sit amet egestas nibh dictum. Duis leo sem, imperdiet quis arcu non, ullamcorper semper ligula.
+				</p>
+				<div class="tm-njo">
+					<hr>
+					<p>NJOTRAVEL&#8482;</p>
+				</div>
+			</div>
+		</section>
+		
+		<script>
+			// carousel home
+			var index = 0;
+			Navi = function (direction) {
+			  var curr = $('input[name="cardslider"]:checked');
+
+			  if (direction == "next") {
+				 let nextElem = curr.next("input");
+				 if (!nextElem.length) {
+					nextElem = $('input[name="cardslider"]').eq(0);
+				 }
+				 nextElem.attr("checked", "checked");
+				 nextElem.click();
+			  } else {
+				 let prevElm = curr.prev("input");
+				 if (!prevElm.length) {
+					prevElm = $('input[name="cardslider"]').eq(4);
+				 }
+				 prevElm.attr("checked", "checked");
+				 prevElm.click();
+			  }
+			};
+			
+			// popup card
+			function cardOne(){
+				let cardindia = document.querySelector('.popup-card');
+				var blackop = document.querySelector('.black-opacity');
+				
+				cardindia.style.display = "block";
+				blackop.style.display = "block";
+			};
+			
+			document.querySelector('.popup-card span').onclick = () => {
+				let cardindia = document.querySelector('.popup-card');
+				var blackop = document.querySelector('.black-opacity');
+				
+				cardindia.style.display= "none";
+				blackop.style.display = "none";
+			};
+		</script>
+		
+		<section class="sec-5" id="beach-home">
+			<div class="title-sec5" data-aos="fade-down">
+				<h3>The Best Beach in the World</h3>
+				<div class="yellow-line"></div>
+			</div>
+			<div class="info-beach">
+				<div class="beach-1" data-aos="fade-right">
+					<img src="/var/www/html/ujian-penjurusan/assets/home/pantai-silir.jpg" alt="pantai-silir.jpg" width="100%" height="auto">
+					<div class="title-beach">
+						<h3>Pantai Silir</h3>
+						<p>
+							Pantai merupakan sebuah bentuk geografis yang terdiri dari pasir, dan terdapat di daerah pesisir laut.
+						</p>
+					</div>
+				</div>
+				<div class="beach-2" data-aos="fade-left">
+					<div class="beach-3 beach-col">
+						<img src="/var/www/html/ujian-penjurusan/assets/home/pantai-kambil.jpg" alt="pantai-kambil.jpg" width="100%" height="auto">
+						<div class="title-beach">
+							<h3>Pantai Kambil</h3>
+							<p>
+								Pantai merupakan sebuah bentuk geografis yang terdiri dari pasir, dan terdapat di daerah pesisir laut.
+							</p>
+						</div>
+					</div>
+					<div class="beach-col">
+						<img src="/var/www/html/ujian-penjurusan/assets/home/pantai-watu.jpg" alt="pantai-watu.jpg" width="100%" height="auto">
+						<div class="title-beach">
+							<h3>Pantai Watu</h3>
+							<p>
+								Pantai merupakan sebuah bentuk geografis yang terdiri dari pasir, dan terdapat di daerah pesisir laut.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="sec-6" id="hill-home">
+			<div>
+				<div class="title-sec5" data-aos="fade-down">
+					<h3>The Best Hill in the World</h3>
+					<div></div>
+				</div>
+				<div class="col-card">
+					<div class="maincard"  data-aos="fade-up">
+						<div class="sub-maincard">
+							<div class="card">
+								<img src="/var/www/html/ujian-penjurusan/assets/home/green-hill-1.jpg" alt="g.jpg" alt="greenhill.jpg" width="100%">
+								<div class="content-card">
+									<h4>Green Hill</h4>
+									<p>
+										Pegunungan Tinggi<br>Negara Indonesia
+									</p>
+									<div>
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<img src="/var/www/html/ujian-penjurusan/assets/home/green-hill-2.jpg" alt="g.jpg" alt="greenhill.jpg" width="100%">
+								<div class="content-card">
+									<h4>Green Hill</h4>
+									<p>
+										Pegunungan Tinggi<br>Negara Indonesia
+									</p>
+									<div>
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sub-maincard">
+							<div class="card">
+								<img src="/var/www/html/ujian-penjurusan/assets/home/green-hill-3.jpg" alt="g.jpg" alt="greenhill.jpg" width="100%">
+								<div class="content-card">
+									<h4>Green Hill</h4>
+									<p>
+										Pegunungan Tinggi<br>Negara Indonesia
+									</p>
+									<div>
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<img src="/var/www/html/ujian-penjurusan/assets/home/green-hill-4.jpg" alt="g.jpg" alt="greenhill.jpg" width="100%">
+								<div class="content-card">
+									<h4>Green Hill</h4>
+									<p>
+										Pegunungan Tinggi<br>Negara Indonesia
+									</p>
+									<div>
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="maincard" data-aos="fade-up">
+						<div class="sub-maincard">
+							<div class="card">
+								<img src="/var/www/html/ujian-penjurusan/assets/home/green-hill-5.jpg" alt="g.jpg" alt="greenhill.jpg" width="100%">
+								<div class="content-card">
+									<h4>Green Hill</h4>
+									<p>
+										Pegunungan Tinggi<br>Negara Indonesia
+									</p>
+									<div>
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<img src="/var/www/html/ujian-penjurusan/assets/home/green-hill-6.jpg" alt="g.jpg" alt="greenhill.jpg" width="100%">
+								<div class="content-card">
+									<h4>Green Hill</h4>
+									<p>
+										Pegunungan Tinggi<br>Negara Indonesia
+									</p>
+									<div>
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sub-maincard">
+							<div class="card">
+								<img src="/var/www/html/ujian-penjurusan/assets/home/green-hill-7.jpg" alt="g.jpg" alt="greenhill.jpg" width="100%">
+								<div class="content-card">
+									<h4>Green Hill</h4>
+									<p>
+										Pegunungan Tinggi<br>Negara Indonesia
+									</p>
+									<div>
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<img src="/var/www/html/ujian-penjurusan/assets/home/green-hill-8.jpg" alt="g.jpg" alt="greenhill.jpg" width="100%">
+								<div class="content-card">
+									<h4>Green Hill</h4>
+									<p>
+										Pegunungan Tinggi<br>Negara Indonesia
+									</p>
+									<div>
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+										<img src="/var/www/html/ujian-penjurusan/assets/svg/star.svg" width="16px" draggable="false">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="sec-7">
+			<h3>Testimonial Konsumen</h3>
+			<hr>
+			<div>
+				<div class="testimoni" data-aos="fade-up">
+					<div class="testi">
+						<img src="/var/www/html/ujian-penjurusan/assets/home/testi-2.jpg" alt="testi.jpg" width="120px">
+						<p>
+							"Saya sangat puas dengan layanan travel yang saya pesan di NJOPLESIR ini. Banyak penawaran paket hemat untuk kita"
+						</p>
+						<h4>
+							MKS Wawan
+						</h4>
+					</div>
+					
+					<div class="testi">
+						<img src="/var/www/html/ujian-penjurusan/assets/home/testi-1.jpg" alt="testi.jpg" width="120px">
+						<p>
+							"Saya sangat puas dengan layanan travel yang saya pesan di NJOPLESIR ini. Banyak penawaran paket hemat untuk kita"
+						</p>
+						<h4>
+							Thomas Erere
+						</h4>
+					</div>
+					
+					<div class="testi">
+						<img src="/var/www/html/ujian-penjurusan/assets/home/testi-3.jpg" alt="testi.jpg" width="120px">
+						<p>
+							"Saya sangat puas dengan layanan travel yang saya pesan di NJOPLESIR ini. Banyak penawaran paket hemat untuk kita"
+						</p>
+						<h4>
+							Angkel Ji
+						</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="sec-8" data-aos="fade-up">
+			<a href="https://www.garuda-indonesia.com/id/id/index" target="_blank">
+				<img src="/var/www/html/ujian-penjurusan/assets/home/sponsor-1.png" height="100px" draggable="false">
+			</a>
+			<a href="https://www.citilink.co.id/" target="_blank">
+				<img src="/var/www/html/ujian-penjurusan/assets/home/sponsor-2.png" height="120px" draggable="false">
+			</a>
+			<a href="https://www.lionair.co.id/" target="_blank">
+				<img src="/var/www/html/ujian-penjurusan/assets/home/sponsor-3.png" height="120px" draggable="false">
+			</a>
+			<a href="https://www.airasia.com/id/id" target="_blank">
+				<img src="/var/www/html/ujian-penjurusan/assets/home/sponsor-4.png" height="120px" draggable="false">
+			</a>
+			<a href="https://www.batikair.com/en/" target="_blank">
+				<img src="/var/www/html/ujian-penjurusan/assets/home/sponsor-5.png" height="130px" draggable="false">
+			</a>
+		</section>
+		
+		<footer>
+			<div class="footer" id="foot">
+				<a class="footer-logo" href="#top">
+				<img src="/var/www/html/ujian-penjurusan/assets/home/logo.png" height="30px" draggable="false">
+				</a>
+				<p class="desc-foot">
+					NJOTRAVEL menyediakan layanan travel dengan menawarkan berbagai paket traveling yang menarik.
+				</p>
+				<div class="medsos">
+					<a href="https://www.youtube.com/@PondokInformatikaAlmadinah">
+						<img src="/var/www/html/ujian-penjurusan/assets/svg/youtube.svg" height="16px" draggable="false">
+						Njoplesirsik
+					</a>
+					<a href="https://www.facebook.com/PondokInformatikaAlmadinah/">
+						<img src="/var/www/html/ujian-penjurusan/assets/svg/facebook.svg" height="16px" draggable="false">
+						Njoplesir-997
+					</a>
+					<a href="https://www.instagram.com/pondokinformatika/?hl=id">
+						<img src="/var/www/html/ujian-penjurusan/assets/svg/instagram.svg" height="16px" draggable="false">
+						Njoplesir_ind
+					</a>
+				</div>
+				<div class="qna">
+					<a href="about.html#qna-about">QnA</a> - <a>FAQ</a> - <a>Settings</a>
+				</div>
+				<p class="pt">
+					PT. Seneg Dolan Group - NjoTravel
+				</p>
+			</div>
+		</footer>
+		
+		<script src="script.js"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 1000,
+			});
+		</script>
+	</body>
+</html>
